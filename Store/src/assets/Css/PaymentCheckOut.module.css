@@ -1,0 +1,51 @@
+.form{
+    display:flex;
+   flex-direction: column;
+   width:100%;
+   margin-top: 10%;
+}
+.container{
+   width: 400px;
+   height: 620px;
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+   justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.containerOutline{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+
+}
+input{
+    border: none; 
+  border-bottom: 1px solid #000; 
+  margin-bottom: 10px; 
+  height: 34px;
+ 
+}
+input:focus{
+    outline: none; 
+  border-color: #007bff; 
+}
+.CheckOutButton{
+    width: 281px;
+    height: 50px;
+    background-color: rgb(183, 181, 181);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+    align-self: center;
+}
+.error{
+  color: red;
+  font-size: small;
+}

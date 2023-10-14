@@ -1,0 +1,46 @@
+.buttonContainer{
+    display: flex;
+    flex-direction:row;
+     align-items:center;
+      justify-content: center;
+       margin-top:4%;
+       gap:1%;
+       margin-bottom: 4%;
+      
+}
+
+button.buttonStyles{
+    color: #757575;
+    border-color: #757575;
+}
+button.buttonStyles:hover{
+    background-color: rgb(183, 181, 181);
+    color: white;
+    border-color: white;
+}
+
+
+
+@media screen and (max-width: 771px) {
+    .buttonContainer {
+       /* column layout on small screens */ 
+      flex-direction: column;
+     column-gap: 2%;
+   
+    }
+     button.buttonStyles{
+        width:100%;
+        margin-bottom: 1%;
+    }
+    .buttonsize{ width:100%;}
+  }
+  
+  /* Media query for large screens (min-width 771px) */
+  @media screen and (min-width: 771px) {
+    .buttonContainer {
+/* Arrange buttons in a row layout on large screens */
+      flex-direction: row;
+    }
+   
+  }
+ 

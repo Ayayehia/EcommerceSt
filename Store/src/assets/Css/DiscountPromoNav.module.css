@@ -1,0 +1,45 @@
+.PromoTextContainer{
+    display:flex;
+    justify-content:center;
+}
+.promoNav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.promoText{ 
+    animation-name: moveLeftToRight;
+    animation-duration: 5s;
+    animation-fill-mode: forwards; 
+}
+.smallPromoNav{
+    width:65%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+   
+    @keyframes moveLeftToRight{
+        0%{
+            opacity: 0;
+            transform: translateX(0%);
+        }
+        100%{
+            opacity: 1;
+            transform:translateX(100%)
+        }
+    }
+
+@media (max-width: 768px) {
+    .promoNav , .smallPromoNav{
+      display: none; /* Hide the element on small screens */
+    }
+  }

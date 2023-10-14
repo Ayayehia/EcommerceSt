@@ -1,0 +1,65 @@
+hr{
+  width:100%  
+}
+.title{
+    font-size: x-large;
+    color:#757575;
+    margin:2%;
+    display:flex;
+    flex-direction: column;
+}
+
+.wishImage{
+    width:10%;
+   
+   
+}
+.imageContainer{
+    display: flex; 
+  margin-left: 10%;
+}
+
+
+
+ th .items {
+    padding: 8px; 
+    text-align: center; 
+  }
+  
+    tr.items{
+  column-gap: 5%;
+  padding: 5px;
+  display:flex;
+  align-items: center;
+  }
+ 
+  
+ thead tr{
+  width: 100%;
+ margin-left: 50%;
+  column-gap: 5%;
+  padding: 5px;
+  display:flex;
+  column-gap: 16%;
+}
+ 
+  
+  .items th button {
+    padding: 5px 10px;   
+    cursor: pointer;
+    background-color:#646affb3;
+    color: white;
+    border-radius: 6px;
+    border: none;
+  }
+  
+
+  /* .table {
+    width: 100%;
+    height: 100%;
+   display: flex;
+   justify-content: space-between;
+  } */
+
+  
+ 

@@ -1,0 +1,6 @@
+.cardDesign{
+    display: flex;
+    direction:row;
+    flex-wrap: wrap;
+   margin: 3%;
+}
