@@ -14,7 +14,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MoreIcon from '@mui/icons-material/MoreVert';
  import FavoriteIcon from '@mui/icons-material/Favorite';
  import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
-  import logo from "../../src/assets/Images/Logo.png"
+  import logo from "../../src/assets/Images/logo.png"
  import Classes from "../../src/assets/Css/Header.module.css"
  import { Link } from "react-router-dom";
  import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
