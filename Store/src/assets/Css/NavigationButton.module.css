@@ -33,6 +33,7 @@ button.buttonStyles:hover{
         margin-bottom: 1%;
     }
     .buttonsize{ width:100%;}
+    
   }
   
   /* Media query for large screens (min-width 771px) */
@@ -41,6 +42,6 @@ button.buttonStyles:hover{
 /* Arrange buttons in a row layout on large screens */
       flex-direction: row;
     }
-   
+    
   }
  

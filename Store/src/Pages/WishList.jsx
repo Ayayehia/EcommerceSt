@@ -22,7 +22,7 @@ const WishListDisplayed = <div style={{ marginTop:"6%"}}>
     </tr>
     </thead>
     <hr/>
-  {wishlist.map((prod) => ( <WishListItems id={prod.id}  price={prod.price} image={prod.image} title={prod.name}/>
+  {wishlist.map((prod) => ( <WishListItems key={prod.id} id={prod.id}  price={prod.price} image={prod.image} title={prod.name}/>
  
 ))}
 </table>

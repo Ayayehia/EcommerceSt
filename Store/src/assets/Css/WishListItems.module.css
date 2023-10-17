@@ -1,4 +1,4 @@
-hr{
+ hr{
   width:100%  
 }
 .title{
@@ -10,37 +10,32 @@ hr{
 }
 
 .wishImage{
-    width:10%;
-   
+    width: 15%;
+     height:76%
    
 }
 .imageContainer{
     display: flex; 
-  margin-left: 10%;
+  justify-content: start;
+  align-items: center;
+  width:25%
 }
 
 
-
- th .items {
-    padding: 8px; 
-    text-align: center; 
-  }
   
-    tr.items{
-  column-gap: 5%;
-  padding: 5px;
+   tr.items{
   display:flex;
   align-items: center;
-  }
+  } 
  
   
  thead tr{
-  width: 100%;
- margin-left: 50%;
+  width: 75%;
+ margin-left: 25%;
   column-gap: 5%;
   padding: 5px;
   display:flex;
-  column-gap: 16%;
+  column-gap: 13%;
 }
  
   
@@ -54,12 +49,43 @@ hr{
   }
   
 
-  /* .table {
-    width: 100%;
-    height: 100%;
-   display: flex;
-   justify-content: space-between;
-  } */
+   .table {
+    width: 100%;}
+    
+    
+    
+    @media (max-width: 678px) {
+      thead tr{
+        width: 75%;
+       margin-left: 19%;
+        column-gap: 3%;
+        padding: 4px;
+        display:flex;
+        column-gap: 11%;
+      }
+     
+      .wishImage{
+        width:15% ;
+        height:56%
+       
+       
+    }
+    }
+    @media (min-width: 771px) { thead tr{
+      width: 75%;
+    margin-left: 22%;
+    column-gap: 23%;
+    padding: 4px;
+    display: flex;
 
-  
- 
+      
+    }}
+    @media (min-width: 1443px) { thead tr{
+      width: 75%;
+      margin-left: 23%;
+      column-gap: 23%;
+      padding: 4px;
+      display: flex;
+  }
+      
+    }

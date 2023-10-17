@@ -4,3 +4,22 @@
     flex-wrap: wrap;
    margin: 3%;
 }
+
+
+
+
+  @media screen and (max-width: 771px) {
+    .cardDesign{ display: flex;
+        direction: row;
+        flex-wrap: wrap;
+        margin: 3%;
+        justify-content: center;}
+  }
+  @media screen and (min-width: 771px) {
+    .cardDesign{ display: flex;
+        direction: row;
+        flex-wrap: wrap;
+        margin: 4%;
+        justify-content: center;
+    gap:2%;}
+  }

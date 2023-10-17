@@ -1,0 +1,31 @@
+.container{display: flex;
+margin:10%}
+
+.imageStyle{border-radius:6px;
+    width:50%}
+    .Title{display:flex;
+        flex-direction:column;
+        margin:5%;} 
+        button.buttonStyle{
+            color: #757575;
+            border-color: #757575;
+        }
+        button.buttonStyle:hover{
+            background-color: rgb(183, 181, 181);
+            color: white;
+            border-color: white;
+        }
+       
+@media screen and (max-width:651px ) {
+   
+    .container{display: flex;
+        margin: 10% 3% 10% 3%}
+        .imageStyle{border-radius:6px;
+            width:30%}
+            .Title{display:flex;
+                flex-direction:column;
+                margin:5%;
+            font-size: small;} 
+        
+
+  }

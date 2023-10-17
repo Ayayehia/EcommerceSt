@@ -3,9 +3,9 @@ import Classes from "../assets/Css/WishListItems.module.css"
 import { addItemToCart} from "../Redux/Slices/CartSlice";
 import ClearIcon from '@mui/icons-material/Clear';
 import { RemoveFromWishList } from "../Redux/Slices/WishListSlice";
-
+import React from "react";
 const WishListItems = ({price,image,id,title}) => {
-    
+    const reducetitle = title.slice(0,18)
     const dispatch = useDispatch();
     
     const AddToCart = ()=>{
@@ -15,24 +15,23 @@ const WishListItems = ({price,image,id,title}) => {
         dispatch(RemoveFromWishList(id))
     }
   return (
+
     <>
-    <div>
-       
+    
             <tr className={Classes.items}>
-          
-            <th> <ClearIcon onClick={Delete}/></th>
              <div className={Classes.imageContainer}>
-            <th style={{width:"200px"}}> <img style={{width:"60%" , height:"76%"}} className={Classes.wishImage} src={image}/></th>
+             <th> <ClearIcon onClick={Delete}/></th>
+            <th className={Classes.image}> <img  className={Classes.wishImage} src={image}/></th>
             </div>
-            <div style={{gap:"5%"}}>
-                <th> {title}</th>
+            <div style={{gap:"5%",display:"flex" , justifyContent:"space-between",width:"100%",padding:"5px",columnGap:"13%"}}>
+                <th> {reducetitle}</th>
                 <th> ${price}</th>
                 <th> In Stock</th>
                 <th><button onClick={AddToCart}> Add To Cart</button></th>
                 </div>
             </tr>
         <hr/>
-    </div>
+   
     </>
   )
 }
