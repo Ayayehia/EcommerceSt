@@ -21,9 +21,9 @@ const WishListSlice =  createSlice({
 
                 })   
             }else{ 
-               return             
-            //    existingItem.totalQuantity= newItems. quantity
-
+               return   existingItem.quantity--;      
+              
+            //    quantity-- 
             
             }
         },
@@ -32,6 +32,9 @@ const WishListSlice =  createSlice({
          const exsistingId= state.items.find((prod)=>prod.id===ID);
          if(exsistingId.quantity==1){
             state.items=state.items.filter((prod)=>prod.id!==ID)
+            state.totalQuantity--;
+         }else{
+            existingItem.quantity--;
          }
         }
     }

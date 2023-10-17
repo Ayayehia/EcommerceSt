@@ -70,7 +70,8 @@ export default function Header({toggle}) {
 
 const Quantity= useSelector((state)=>state.cart.totalQuantity)
 const wishlistQuantity = useSelector((state)=>state.wishlist.totalQuantity)
-
+// const wishQuantity=useSelector((state)=>state.wishlist.quantity)
+// console.log(wishQuantity,"the quantity number")
 console.log(Quantity,"totalQuantity")
   const Dispatch = useDispatch()
   
