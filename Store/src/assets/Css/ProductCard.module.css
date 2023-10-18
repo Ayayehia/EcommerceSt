@@ -4,8 +4,12 @@
     flex-wrap: wrap;
    margin: 3%;
 }
-
-
+.fav{
+  color:black
+}
+ .fav:active{
+color: red;
+}
 
 
   @media screen and (max-width: 771px) {

@@ -64,7 +64,7 @@ const ProductCard = ({title,price,description,image,prodId,style,styleTwo}) => {
       </Link>
       <CardActions style={{display:"flex",justifyContent:"space-around",alignItems: "center" ,margin:"9% 4% 9% 4%"}}>
        
-        <Link ><FavoriteBorderIcon  style={{ color: 'black' }} onClick={addToWish}/></Link>
+        <Link ><FavoriteBorderIcon className={Classes.fav}  onClick={addToWish}/></Link>
         <Button onClick={AddItem} size="large" variant="outlined" className={Classes.buttonStyles}> Add To Cart</Button>
        
        
