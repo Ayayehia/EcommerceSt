@@ -21,7 +21,12 @@ button.buttonStyles:hover{
 
 }
 
-
+svg.fav{
+  color:black
+}
+ svg.fav:active{
+color: red;
+}
 
 @media screen and (max-width: 771px) {
     .buttonContainer {

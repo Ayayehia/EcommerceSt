@@ -4,12 +4,7 @@
     flex-wrap: wrap;
    margin: 3%;
 }
-.fav{
-  color:black
-}
- .fav:active{
-color: red;
-}
+
 
 
   @media screen and (max-width: 771px) {
@@ -19,6 +14,7 @@ color: red;
         margin: 3%;
         justify-content: center;}
   }
+  
   @media screen and (min-width: 771px) {
     .cardDesign{ display: flex;
         direction: row;
@@ -26,4 +22,5 @@ color: red;
         margin: 4%;
         justify-content: center;
     gap:2%;}
+   
   }
