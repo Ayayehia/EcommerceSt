@@ -20,7 +20,7 @@ return   dispatch( filterByCategory(categoryName)); // Pass the category name as
   return (
     <div className={Classes.buttonContainer}  >
      {Buttons.map((name,index)=>
-    (<div className={Classes.buttonsize} key={index}><Link to={"/filteredProducts/"+name}> <Button onClick={()=>FilterByClick(name)} key={name} className={Classes.buttonStyles}   variant="outlined">{name}</Button></Link></div> )
+    (<div className={Classes.buttonsize} key={index}><Link style={{textDecoration:"none"}} to={"/filteredProducts/"+name}> <Button onClick={()=>FilterByClick(name)} key={name} className={Classes.buttonStyles}   variant="outlined">{name}</Button></Link></div> )
      )} 
    </div>
   )
