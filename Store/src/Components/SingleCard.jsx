@@ -25,7 +25,7 @@ const Favorite = ()=>{
         <p>{price}$</p>
         <CardActions style={{display:"flex",justifyContent:"space-around",alignItems: "center" ,margin:"9% 4% 9% 4%"}}>
        
-       <Link><FavoriteBorderIcon onClick={Favorite}/></Link>
+       <Link><FavoriteBorderIcon  style={{ color: 'black' }}  onClick={Favorite}/></Link>
        <Button onClick={AddToCart} size="large" variant="outlined" className={Class.buttonStyle}> Add To Cart</Button>
       
       

@@ -50,7 +50,7 @@ const ProductCard = ({title,price,description,image,prodId,style,styleTwo}) => {
           alt="green iguana"
         />
         <CardContent>
-          <Typography  gutterBottom variant="h5" component="div">
+          <Typography style={{ color: 'black' }}  gutterBottom variant="h5" component="div">
            {titleReduce}.
           </Typography>
           <Typography variant="body2" color="text.secondary">
@@ -64,7 +64,7 @@ const ProductCard = ({title,price,description,image,prodId,style,styleTwo}) => {
       </Link>
       <CardActions style={{display:"flex",justifyContent:"space-around",alignItems: "center" ,margin:"9% 4% 9% 4%"}}>
        
-        <Link><FavoriteBorderIcon onClick={addToWish}/></Link>
+        <Link ><FavoriteBorderIcon  style={{ color: 'black' }} onClick={addToWish}/></Link>
         <Button onClick={AddItem} size="large" variant="outlined" className={Classes.buttonStyles}> Add To Cart</Button>
        
        

@@ -12,11 +12,13 @@
 button.buttonStyles{
     color: #757575;
     border-color: #757575;
+   text-decoration: none;
 }
 button.buttonStyles:hover{
     background-color: rgb(183, 181, 181);
     color: white;
     border-color: white;
+
 }
 
 
@@ -31,6 +33,7 @@ button.buttonStyles:hover{
      button.buttonStyles{
         width:100%;
         margin-bottom: 1%;
+        text-decoration: none;
     }
     .buttonsize{ width:100%;}
     
@@ -42,6 +45,8 @@ button.buttonStyles:hover{
 /* Arrange buttons in a row layout on large screens */
       flex-direction: row;
     }
-    
+    button.buttonStyles{
+      text-decoration: none;
+  }
   }
  
