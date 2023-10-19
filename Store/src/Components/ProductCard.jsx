@@ -10,6 +10,7 @@ import { useDispatch } from 'react-redux';
 import { filterById } from '../Redux/Slices/FilterProductSlice';
 import {addItemToCart} from "../Redux/Slices/CartSlice"
 import { addWishList } from '../Redux/Slices/WishListSlice';
+import Classe from "../assets/Css/ProductCard.module.css"
 const ProductCard = ({title,price,description,image,prodId,style,styleTwo}) => {
     //height of image kant 140
    // card max width 345
@@ -62,7 +63,7 @@ const ProductCard = ({title,price,description,image,prodId,style,styleTwo}) => {
         </CardContent>
       </CardActionArea>
       </Link>
-      <CardActions style={{display:"flex",justifyContent:"space-around",alignItems: "center" ,margin:"9% 4% 9% 4%"}}>
+      <CardActions className={Classe.cardbtn} >
        
         <Link ><FavoriteBorderIcon className={Classes.fav}  onClick={addToWish}/></Link>
         <Button onClick={AddItem} size="large" variant="outlined" className={Classes.buttonStyles}> Add To Cart</Button>
